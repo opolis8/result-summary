@@ -27,7 +27,7 @@ function htmlAdd() {
     const { category, score, icon } = dataObject;
 
     const output = `
-    <div class="post js-${category}"><img src="${icon}"></img><div class="${category}">${category}</div>     <div class="score">${score}/<span class="span-score">100</span></div></div>`;
+    <div class="post js-${category}"><img src="${icon}" alt="image of ${category}"></img><div class="${category}">${category}</div>     <div class="score">${score}/<span class="span-score">100</span></div></div>`;
     todoHtml += output;
   });
 
